@@ -75,8 +75,8 @@ briefcase run android
 
 Two acquisition scripts are provided in `psychopy_scripts/`:
 
-- **TAPAS_metronomo.py** — for paced tapping conditions. Presents an isochronous metronome via PsychoPy audio and monitors tap events from two tablets simultaneously via ADB. Sends EEG triggers at each metronome onset.
-- **TAPAS_syncro.py** — for dyadic/free synchronization conditions. No metronome is presented. Monitors tap events from two tablets for a fixed session duration.
+- **TAPAS_metronomo.py** — for paced tapping conditions. Presents an isochronous metronome via PsychoPy audio and monitors tap events from two tablets/smartphones simultaneously via ADB. Sends EEG triggers at each metronome onset.
+- **TAPAS_syncro.py** — for dyadic/free synchronization conditions. No metronome is presented. Monitors tap events from two tablets/smartphones for a fixed session duration.
 
 Both scripts require two Android devices running TAPAS to be connected via USB and authorized via ADB before launch. Output is saved as semicolon-separated CSV files in `./csv_files/`.
 
@@ -90,7 +90,7 @@ python TAPAS_syncro.py
 ## Customization
 
 - **Tap sound**: replace the audio file in `src/TAPAS/resources/` and update the filename in `app.py` before building. Different devices can use different sounds.
-- **Number of devices**: additional tablets can be monitored by adding ADB logcat subprocesses and corresponding threads in the acquisition scripts.
+- **Number of devices**: additional tablets/smartphones can be monitored by adding ADB logcat subprocesses and corresponding threads in the acquisition scripts.
 - **EEG system**: the trigger-sending logic uses standard serial port communication and can be adapted to any EEG system that accepts serial triggers, not just the Brain Products TriggerBox.
 - **Session duration**: in `TAPAS_syncro.py`, the session length (default: 360 s) can be modified in the `timer()` function.
 - **Metronome**: in `TAPAS_metronomo.py`, the number of beats (`num_sound`) and inter-stimulus interval (`isi`) can be adjusted in the `metronomo()` function.
