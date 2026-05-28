@@ -97,9 +97,9 @@ python TAPAS_syncro.py
 
 ## Citation
 
-If you use TAPAS in your research, please cite this work. A manuscript describing and validating TAPAS has been submitted to the journal Royal Society Open Science. Citation details will be updated after publication.
+If you use TAPAS in your research, please cite this work. Citation details will be updated after publication.
 
-> Carraturo G., Matarrelli B., Keller P.E., Bevilacqua V., Sibilano E., Brunetti A., Brattico E., Carlomagno F. (in review). TAPAS: A Mobile App for Individual and Joint Finger-Tapping in Multi-person Behavioral and Neurophysiological Research. Royal Society Open Science.
+
 
 ## License
 
